@@ -1,0 +1,209 @@
+/* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    background-color: #f21010;
+    overflow-x: hidden;
+
+}
+
+/* Header */
+.header1 {
+    text-align: center;
+}
+
+.logo1 {
+    position: absolute;
+    left: 3%;
+    top: 3%;
+}
+
+.header2 {
+    position: relative;
+    width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    /* padding: 15px 30px;  */
+}
+
+.navbar a {
+    font-size: 22px; /* Increased font size */
+    color: #fff;
+    margin-left: 15px; /* Increased margin */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #c3352f;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+}
+
+nav ul li {
+    position: relative;
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: white;
+    padding: 15px 30px; /* Increased padding */
+    display: block;
+}
+
+/* Dropdown Styles */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+.sub-dropdown {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: rgb(101, 255, 24);
+}
+
+nav ul li > ul > li:hover .sub-dropdown {
+    display: block;
+}
+
+/* About Us Section */
+.about-us-section {
+    padding: 60px; /* Increased padding */
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-us-section h2 {
+    font-size: 3em; /* Increased font size */
+    margin-bottom: 30px; /* Increased margin */
+}
+
+/* Section Container */
+.section-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Increased gap */
+}
+
+/* Section Boxes */
+.section-box {
+    flex: 1;
+    padding: 30px; /* Increased padding */
+    max-width: 450px; /* Slightly increased max width */
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly more shadow */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: left;
+}
+
+.vision-box:hover {
+    background-color: #c3352f;
+    color: white;
+    transform: translateX(10px); /* Decreased translate distance */
+}
+
+.mission-box:hover {
+    background-color: #00539C;
+    color: white;
+    transform: translateX(10px); /* Decreased translate distance */
+}
+
+/* Footer */
+.footer-distributed {
+    background-color: #282828;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px; /* Increased padding */
+    font-family: Arial, sans-serif;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    margin: 0 20px; /* Increased margin */
+}
+
+.footer-left h3 {
+    font-size: 28px; /* Increased font size */
+    margin-bottom: 15px; /* Added bottom margin */
+}
+
+.footer-team-name {
+    margin: 5px 0 0;
+    font-size: 16px; /* Increased font size */
+}
+
+.footer-center {
+    text-align: left;
+}
+
+.footer-center div {
+    margin-bottom: 15px; /* Increased margin */
+}
+
+.footer-center a {
+    color: #c3352f;
+    text-decoration: none;
+}
+
+.footer-center p {
+    margin: 5px 0;
+    font-size: 16px; /* Increased font size */
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-team-about {
+    margin-bottom: 20px; /* Increased bottom margin */
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-icons a {
+    color: white;
+    margin: 0 15px; /* Increased margin */
+    font-size: 24px; /* Increased font size */
+    text-decoration: none;
+}
+
+.footer-icons a:hover {
+    color: #c3352f;
+}
+
+.fa {
+    margin-right: 10px; /* Increased margin */
+}

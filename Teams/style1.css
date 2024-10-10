@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #cbc9e8;
+}
+
+.wrapper .title{
+    text-align: center;
+}
+
+.title h4{
+    display: inline-block;
+    padding: 20px;
+    color: #585757;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    word-spacing: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    text-transform: uppercase;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+}
+
+.wrapper .card_Container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.card_Container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+                inset 0 0 0 1000px rgba(67, 52, 109, .6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .imbBx, .imbBx img{
+    width: 100%;
+    height: 100%;
+}
+
+.card .content{
+    position: absolute;
+    bottom: -160px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: bottom 0.5s;
+    transition-delay: 0.65s;
+}
+
+.card:hover .content{
+    bottom: 0;
+    transition-delay: 0s;
+}
+
+.content .contentBx h3{
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 15px;
+    line-height: 1.1em;
+    transition: 0.5s;
+    transition-delay: 0.6s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.card:hover .content .contentBx h3{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content .contentBx h3 span{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.content .sci{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+}
+
+.content .sci li{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.2s * var(--i));
+}
+
+.card:hover .content .sci li{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.content .sci li a{
+    color: #fff;
+    font-size: 24px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Poppins;
+        }
+        .home-container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            justify-content: start;
+            background-color: #0c52a1;
+        }
+        .profile-card{
+            position: relative;
+            width: 200px;
+            height: 220px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 50%;
+            box-shadow: -5px 8px 45px rgba(51, 51, 51, 0.126);
+            transition: all .4s;
+            margin: 0 20px;
+        }
+        .profile-card:hover{
+            border-radius: 10px;
+            height: 260px;
+        }
+        .profile-card .img{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .profile-card:hover img{
+            border-radius: 10px;
+            transform: translateY(-70px);
+        }
+        .img img{
+            object-fit: fill;
+            width: 100%;
+            border-radius: 50%;
+            transition: all .4s;
+            z-index: 99;
+        }
+        .caption{
+            text-align: center;
+            transform: translateY(-90px);
+            opacity: 0;
+            pointer-events: none;
+            transition: all .5s;
+        }
+        .profile-card:hover .caption{
+            opacity: 1;
+            pointer-events: all;
+        }
+        .caption h3{
+            font-size: 21px;
+            color: #0c52a1;
+            font-weight: 600;
+        }
+        .caption p{
+            font-size: 15px;
+            font-weight: 500;
+            margin: 2px 0 12px 0;
+        }
+        .caption .social-links i{
+            font-size: 21px;
+            margin: 0 3px;
+            cursor: pointer;
+            color: #333;
+            transition: all .4s;
+        }
+        .caption .social-links i:hover{
+            color: #0c52a1;
+        }
+
+
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 16px;
+            padding: 16px;
+        }
+        
+        .member-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+        }
+        
+        .member-card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+        }
+        
+        .member-image {
+            overflow: hidden; /* Prevent overflow */
+        }
+        
+        .member-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s; /* Smooth zoom effect */
+        }
+        
+        .member-image img:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+        
+        .member-info {
+            padding: 16px;
+        }
+        
+        .member-info h3 {
+            margin: 0;
+            font-size: 1.5em; /* Slightly larger font for names */
+            color: #333;
+        }
+        
+        .member-info p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9em; /* Slightly smaller font for descriptions */
+        }
+        
+        /* Media Queries for further responsiveness */
+        @media (max-width: 600px) {
+            .member-info h3 {
+                font-size: 1.2em; /* Adjust name font size for smaller screens */
+            }
+            
+            .member-info p {
+                font-size: 0.8em; /* Adjust description font size for smaller screens */
+            }
+        }
+        
