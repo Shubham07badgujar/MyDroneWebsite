@@ -1,0 +1,265 @@
+Basic styling
+body {
+    font-family: 'Merriweather', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    position: relative; /* Ensure the navbar is relatively positioned */
+    z-index: 10; /* Higher z-index to ensure it appears above other content */
+  }
+  
+  /* Submenu */
+  .navbar .submenu {
+    position: absolute; /* Ensure the submenu is positioned absolutely */
+    top: 100%; /* Position it below the navbar */
+    left: 0;
+    z-index: 20; /* Give it a higher z-index so it's above the outer box */
+    background-color: white; /* Ensure it's visible */
+    display: none; /* Hide by default */
+  }
+  
+  /* Show submenu on hover */
+  .navbar li:hover .submenu {
+    display: block;
+  }
+  
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 1px;
+position: sticky;
+  
+background-image: linear-gradient(90deg, rgb(255 0 0), rgb(255 187 187));}
+  
+  nav ul li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+  }
+  
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+  }
+  
+  nav ul li:hover ul {
+    display: block;
+  }
+  
+ .header1 {
+    background-color: black;
+    color: white;
+    padding: 1px;
+    text-align: center;
+  }
+  .para1{
+    margin-bottom: 10px;
+  }
+  .logo1{
+    position: fixed;
+    left: 3%;
+    top: 3%
+  }  
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+
+body {
+  margin-top: 10px;
+  background-size: cover;
+  background-color: #0d0d0d;
+  background-repeat: no-repeat;
+}
+
+
+/* About Us Section */
+.about-us-section {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-us-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Section Container for Vision & Mission */
+.section-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between Vision and Mission */
+    padding-bottom: 30px;
+
+}
+
+/* Section Boxes */
+.section-box {
+    flex: 1;
+    padding: 20px;
+    max-width: 400px; /* Controls the width of the boxes */
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+    height: 250px;
+    margin-top: 10px;
+}
+
+/* Horizontal Hover Effect */
+.vision-box:hover, .mission-box:hover {
+    transform: translateX(20px); /* Moves the box 20px to the right */
+}
+
+.para {
+font-size: 15px;
+flex: 1;
+
+padding: 20px;
+max-width: 400px; /* Controls the width of the boxes */
+background-color: #f0f0f0;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+transition: transform 0.3s ease, background-color 0.3s ease;
+position: relative;
+text-align: left;
+cursor: pointer;
+height: 250px;
+padding-left: 50px;
+margin-top: 10px;
+margin-left: 350px;
+}
+
+/* Vision Box Hover */
+.vision-box:hover {
+    background-color: #c3352f;
+    color: white;
+}
+
+.vision-box:hover h3 {
+    color: #fff;
+}
+
+/* Mission Box Hover */
+.mission-box:hover {
+    background-color: #00539C;
+    color: white;
+}
+
+.mission-box:hover h3 {
+    color: #fff;
+}
+
+/* Footer Styling */
+.footer-distributed {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-links {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    color: #c3352f;
+}
+
+.footer-center,.footer-left, .footer-right {
+    flex: 1;
+    left: 0;
+}
+
+
+.footer-team-name {
+    margin-top: 10px;
+}
+
+.footer-icons i {
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: white;
+}
+
+.footer-icons a:hover i {
+    color: #c3352f;
+}
+
+.logo1{
+    position: fixed;
+    left: 3%;
+    top: 3%
+  }
+
+  .footer-icons{
+    display: flex;
+    left: 500;
+  }
+
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
+    text-align: right;
+}
+
+
+.footer-icons a {
+    display: block; /* Forces each anchor link to appear on a new line */
+    margin-bottom: 1px; /* Adds space between each link */
+    text-decoration: none;
+    color: white;
+}
+
+.footer-icons a:hover {
+    color: #c3352f; /* Changes color on hover */
+}
+
+.footer-icons img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.container{
+    
+    padding-top: 40px;
+    border: 5px black;
+    background-color: rgb(255, 157, 157);
+    padding-top: 5px;
+}
+.pi{
+    margin-bottom: 15px;
+}

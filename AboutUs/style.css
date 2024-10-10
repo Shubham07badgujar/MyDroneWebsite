@@ -1,0 +1,353 @@
+/* Basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+
+body {
+    font-family: 'Merriweather', sans-serif;
+    background-color: #0d0d0d;
+    background-size: no-repeat;
+    margin: 0;
+    padding: 8px;
+}
+
+
+.navbar{
+    padding-top: 0px;
+
+}
+.header2 .logo1{
+  top: 50;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  padding: 7px 50px;
+  /* background: rgb(0, 26, 26); */
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  z-index: 100;
+ 
+}
+/* header effect */
+.header2::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: 0.2s;
+}
+.header2:hover::before {
+  left: 100%;
+}
+/* logo */
+.logo {
+  cursor: default;
+}
+
+/* navbar effect */
+
+.navbar a {
+  font-size: 20px;
+  color: #fff;
+  margin : 10px;
+}
+.navbar a:link {
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: #c3352f;
+}
+#nav2 {
+  margin: 0 !important;
+  /* margin-top: 10px !important; */
+  padding: 11px !important;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+/* Style for the main dropdown menu */
+nav ul li ul {
+  display: none; /* Hide all dropdowns by default */
+  position: absolute; /* Position dropdowns absolutely */
+  top: 100%; /* Position them directly below */
+  left: 0; /* Align them to the left of the parent */
+  background-color: black; /* Background color */
+  z-index: 102;
+}
+
+/* Show dropdowns for Departments only */
+nav ul li:hover > ul {
+  display: block; /* Show main dropdown on hover */
+}
+
+/* Style for the sub-dropdowns */
+.sub-dropdown {
+  display: none; /* Hide sub-dropdowns by default */
+  position: absolute; /* Position sub-dropdowns absolutely */
+  top: 0; /* Align it to the top of the parent */
+  left: 100%; /* Position it to the right of the parent */
+  background-color: black; /* Background color */
+}
+
+/* Show sub-dropdowns when hovering over Technical or Non-Technical Departments */
+nav ul li > ul > li:hover .sub-dropdown {
+  display: block; /* Show sub-dropdown on hover */
+}
+
+/* Optional: Add hover effect */
+li a:hover {
+  background-color: #333; /* Change background on hover */
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 2px;
+  position: relative;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+}
+
+.logo1{
+  position: absolute;
+  left: 3%;
+  top: 3%
+}
+ 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+
+body {
+  margin: 0;
+  background-size: cover;
+  background-color: #0d0d0d;
+  background-repeat: no-repeat;
+}
+
+#menu-icon {
+  font-size: 36px;
+  color: #fff;
+  display: none;
+}
+
+/* breakpoints */
+@media (max-width: 992px) {
+  .header {
+    padding: 1.25rem 4%;
+  }
+}
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: 101;
+  }
+  .navbar.active {
+    display: block;
+  }
+  .navbar a {
+    display: block;
+    margin: 1.5rem 0 0 2.5rem;
+  }
+  .nav-bg {
+    position: fixed;
+    top: 11.8%;
+    left: 0;
+    width: 100%;
+    height: 295px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 99;
+    display: none;
+  }
+  .nav-bg.active {
+    display: block;
+  }
+}
+
+/* About Us Section */
+.about-us-section {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    
+}
+
+.about-us-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Section Container for Vision & Mission */
+.section-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between Vision and Mission */
+}
+
+/* Section Boxes */
+.section-box {
+    flex: 1;
+    padding: 20px;
+    max-width: 400px; /* Controls the width of the boxes */
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+    height: 250px;
+}
+
+/* Horizontal Hover Effect */
+.vision-box:hover, .mission-box:hover {
+    transform: translateX(20px); /* Moves the box 20px to the right */
+}
+
+/* Vision Box Hover */
+.vision-box:hover {
+    background-color: #c3352f;
+    color: white;
+}
+
+.vision-box:hover h3 {
+    color: #fff;
+}
+
+/* Mission Box Hover */
+.mission-box:hover {
+    background-color: #00539C;
+    color: white;
+}
+
+.mission-box:hover h3 {
+    color: #fff;
+}
+
+/* Footer Styling */
+.footer-distributed {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-links {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    color: #c3352f;
+}
+
+.footer-center,.footer-left, .footer-right {
+    flex: 1;
+    left: 0;
+}
+
+
+.footer-team-name {
+    margin-top: 10px;
+}
+
+.footer-icons i {
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: white;
+}
+
+.footer-icons a:hover i {
+    color: #c3352f;
+}
+
+.footer-icons{
+  display: flex;
+  left: 500;
+}
+
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
+    text-align: right;
+}
+
+
+.footer-icons a {
+    display: block; /* Forces each anchor link to appear on a new line */
+    margin-bottom: 10px; /* Adds space between each link */
+    text-decoration: none;
+    color: white;
+}
+
+.footer-icons a:hover {
+    color: #c3352f; /* Changes color on hover */
+}
+
+.footer-icons img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
