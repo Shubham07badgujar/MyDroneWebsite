@@ -43,14 +43,14 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    width: 100%;
+    width: 100%;    
     /* padding: 15px 30px;  */
 }
 
 .navbar a {
-    font-size: 22px; /* Increased font size */
+    font-size: 18px; /* Increased font size */
     color: #fff;
-    margin-left: 15px; /* Increased margin */
+    margin-left: 0; /* Increased margin */
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -69,15 +69,13 @@ nav ul {
 
 nav ul li {
     position: relative;
-    padding: 0;
     flex-grow: 1;
 }
 
 nav ul li a {
     color: white;
-    padding: 10px 0px; /* Increased padding */
+    padding: 15px 30px; /* Increased padding */
     display: block;
-    font-size: small;
 }
 
 /* Dropdown Styles */
@@ -86,7 +84,7 @@ nav ul li ul {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: rgb(26, 26, 26);
+    background-color: black;
 }
 
 nav ul li:hover > ul {
@@ -98,8 +96,7 @@ nav ul li:hover > ul {
     position: absolute;
     top: 0;
     left: 100%;
-    background-color: rgb(39, 38, 38);
-    padding: 0px;
+    background-color: rgb(101, 255, 24);
 }
 
 nav ul li > ul > li:hover .sub-dropdown {
