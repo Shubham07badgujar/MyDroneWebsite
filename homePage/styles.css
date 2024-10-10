@@ -7,20 +7,29 @@
 }
 
 body {
-    background-color: #f21010;
+    background-color: black;
     overflow-x: hidden;
 
 }
 
 /* Header */
 .header1 {
+    padding-top: 30px;
     text-align: center;
+    color: #c3352f;
+    font-size: larger;
 }
 
 .logo1 {
     position: absolute;
     left: 3%;
-    top: 3%;
+    top: 4%;
+}
+
+.logo2{
+    position: absolute;
+    left: 90%;
+    top: 4%;
 }
 
 .header2 {
@@ -206,4 +215,9 @@ nav ul li > ul > li:hover .sub-dropdown {
 
 .fa {
     margin-right: 10px; /* Increased margin */
+}
+
+.clgname{
+    color: white;
+    font-size: large;
 }
