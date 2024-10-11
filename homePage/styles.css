@@ -50,7 +50,7 @@ body {
 .navbar a {
     font-size: 22px; /* Increased font size */
     color: #fff;
-    margin-left: 15px; /* Increased margin */
+    margin-left: 20px; /* Increased margin */
     text-decoration: none;
     transition: color 0.3s ease;
 }
